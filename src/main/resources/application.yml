@@ -1,0 +1,30 @@
+server:
+    port: 9999
+    servlet:
+        context-path: /cafe
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: 21199422
+        url: jdbc:postgresql://localhost:5432/cafe
+        username: postgres
+    jpa:
+        properties:
+            hibernate:
+                ddl-auto: update
+                format_sql: true
+        show-sql: true
+    mail:
+        host: smtp.gmail.com
+        password: your_app_password
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+        username: namnguyencong23@gmail.com #your gmail
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
