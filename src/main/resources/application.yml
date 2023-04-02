@@ -16,7 +16,7 @@ spring:
         show-sql: true
     mail:
         host: smtp.gmail.com
-        password: your_app_password
+        password: yourpassword
         port: 587
         properties:
             mail:
@@ -24,7 +24,7 @@ spring:
                     auth: true
                     starttls:
                         enable: true
-        username: namnguyencong23@gmail.com #your gmail
+        username: namnguyencong23@gmail.com
     mvc:
         pathmatch:
             matching-strategy: ant_path_matcher
